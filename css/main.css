@@ -356,6 +356,10 @@ nav {
     }
 
 
+    .fa-search {
+
+        display: none;
+    }
 
     /* .search_field_nav input[type=text]:hover,
     .search_field_nav input[type=text]:focus {

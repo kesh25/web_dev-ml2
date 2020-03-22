@@ -238,8 +238,7 @@ class Storage {
 
     static getCart() {
         return localStorage.getItem("cart") ?
-            JSON.parse(localStorage.getItem("cart")) :
-            [];
+            JSON.parse(localStorage.getItem("cart")) : [];
     }
 }
 
