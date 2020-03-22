@@ -262,3 +262,9 @@ document.addEventListener("DOMContentLoaded", () => {
             ui.cartLogic();
         });
 });
+
+//for opener
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
