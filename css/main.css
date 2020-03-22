@@ -350,10 +350,16 @@ nav {
     }
 
     .search_field_nav input[type=text] {
-        width: 70%;
+        width: 60%;
 
         letter-spacing: 0rem;
     }
+
+    /* .search_field_nav input[type=text]:hover,
+    .search_field_nav input[type=text]:focus {
+        width: 100vw;
+        letter-spacing: 0rem;
+    } */
 
 
 
