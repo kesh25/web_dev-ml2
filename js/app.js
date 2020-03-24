@@ -1,9 +1,14 @@
-const cartBtn = document.querySelector(".cart-btn");
+var client = contentful.createClient({
+    space: "vyeqgi6ok1tv",
+    accessToken: "WP4zVk0WjGzQ_Al0wisFk6kA11EXJNEHFuuPB7OhAOk"
+});
+
+const cartBtn = document.getElementById("cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
 const clearCartBtn = document.querySelector(".clear-cart");
 const cartDOM = document.querySelector(".cart");
 const cartOverlay = document.querySelector(".cart-overlay");
-const cartItems = document.querySelector(".cart-items");
+const cartItems = document.querySelector(".cart_nav_value");
 const cartTotal = document.querySelector(".cart-total");
 const cartContent = document.querySelector(".cart-content");
 const productsDOM = document.querySelector(".products-center");

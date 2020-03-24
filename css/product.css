@@ -10,7 +10,7 @@
 /* --------------- Products ---------------- */
 
 .products {
-
+    cursor: pointer;
     padding: 4rem 0;
 }
 

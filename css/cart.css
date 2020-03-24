@@ -15,9 +15,9 @@
     width: 100%;
     height: 100%;
     transition: var(--mainTransition);
-    /* background: rgb(240, 157, 81, 0.5); */
+    background: rgb(240, 157, 81, 0.5);
     z-index: 1500;
-    display: block;
+    visibility: hidden;
 }
 
 .cart {
@@ -112,6 +112,20 @@
 .cart-footer h3 {
     text-transform: capitalize;
     margin-bottom: 1rem;
+}
+
+.clear-cart {
+    background: var(--primary_color);
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.clear-cart:hover {
+    background: rgb(238, 79, 79);
+    font-size: 1.2em;
 }
 
 /* --------------- End of Cart ---------------- */

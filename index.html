@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soko Kubwa :: Group 11 </title>
-    <!-- bootstrap CDN -->
+    <title>Document</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/logo (1).gif" type="image/gif" sizes="16x16">
+
+
+
+    <!-- end favicon -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- fontawesome CDN -->
+
     <script src="https://kit.fontawesome.com/9a970458ba.js" crossorigin="anonymous"></script>
-    <!-- custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -39,7 +46,7 @@
             </div>
 
             <div class="search_field_nav">
-                <input type="text" name="search" class="search" id="search" placeholder="Search item...">
+                <input type="text" name="search" class="search" id="search" placeholder="Search item..." required>
                 <i class="fas fa-search"></i>
             </div>
 
@@ -61,54 +68,143 @@
 
     <section class="hero">
         <div class="hero_minor">
-            <div class="green height container-fluid qualities">
+            <div class="container-fluid background qualities">
+                <div class="quality thumbs_ip">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span>Perfect Staff</span>
+                    <h6>No one does it like we do...</h6>
+                </div>
 
+                <div class="quality star">
+                    <i class="fas fa-star"></i>
+                    <span>Quality Services</span>
+                    <h6>Nothing but quality...</h6>
+                </div>
+
+                <div class="quality truck">
+                    <i class="fas fa-truck"></i>
+                    <span>Fast Delivery</span>
+                    <h6>Same day delivery...</h6>
+                </div>
             </div>
             <div class="yellow height container-fluid promo">
-
+                <span class="black">Black</span>
+                <span class="Friday">Friday</span>
+                <p>Sale</p>
+                <p class="dates">13th - 27th April</p>
             </div>
         </div>
 
         <div class="hero_image">
             <div class="container-fluid content_promo">
+                <h2>Sell With us and grow your business...</h2>
+                <h4>Soko Kubwa ...the African-developed e-commerce platform</h4>
 
             </div>
 
             <div class="container hero_promo_image">
-                <img src="./images/clothe_2.jpg" alt="">
+
+                <img id="hero_image" src="./images/furniture_4.jpg" alt="">
+
+            </div>
+
+
+
+
+            <div class="dot_container" style="text-align:center">
+                <span class="dot" onclick="showSlides(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
 
 
-        <div class="height blue container-fluid nav">
-
+        <div class="hero_nav background container-fluid nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-first-aid"></i>
+                        <span class="text_nav">Covid-19 Awareness</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tshirt"></i>
+                        <span class="text_nav">Fashion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-dumbbell"></i>
+                        <span class="text_nav">Health & Fitness</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-highlighter"></i>
+                        <span class="text_nav">Beauty</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-tv"></i>
+                        <span class="text_nav">Electronics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="text_nav">Phones & Tablets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span class="text_nav">Grocery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-baby"></i>
+                        <span class="text_nav">Baby Product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="text_nav">More</span>
+                    </a>
+                </li>
+            </ul>
         </div>
+
     </section>
 
     <section class="hero_after">
         <div class="global">
-            <i class="fas fa-chevron-down"></i>
+            <i class="twisted fas fa-plane"></i>
             Soko Kubwa global
         </div>
 
         <div class="global">
-            <i class="fas fa-chevron-down"></i>
-            Soko Kubwa global
+            <i class="fas fa-shopping-cart"></i>
+            Soko Kubwa Mall
         </div>
 
         <div class="global">
-            <i class="fas fa-chevron-down"></i>
-            Soko Kubwa global
+            <i class="fas fa-truck"></i>
+            Free Delivery
         </div>
 
         <div class="global">
-            <i class="fas fa-chevron-down"></i>
-            Soko Kubwa global
+            <i class="fas fa-tree"></i>
+            Project Mazingira
         </div>
 
 
 
     </section>
+
     <section class="products">
         <div class="section-title">
             <h2>our products</h2>
@@ -166,55 +262,6 @@
             </article>
             <!-- end of product -->
 
-            <!-- single product -->
-            <article class="product">
-                <div class="img-container">
-                    <img src="./images/clothe_1.jpg" alt="product" class="product-img" />
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-shopping-cart"></i>add to bag
-                    </button>
-                </div>
-                <h3>queen bed</h3>
-                <h4>$167.00</h4>
-            </article>
-            <!-- end of product -->
-
-            <!-- single product -->
-            <article class="product">
-                <div class="img-container">
-                    <img src="./images/clothe_1.jpg" alt="product" class="product-img" />
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-shopping-cart"></i>add to bag
-                    </button>
-                </div>
-                <h3>queen bed</h3>
-                <h4>$167.00</h4>
-            </article>
-            <!-- end of product -->
-
-            <!-- single product -->
-            <article class="product">
-                <div class="img-container">
-                    <img src="./images/clothe_1.jpg" alt="product" class="product-img" />
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-shopping-cart"></i>add to bag
-                    </button>
-                </div>
-                <h3>queen bed</h3>
-                <h4>$167.00</h4>
-            </article>
-            <!-- end of product -->
-            <!-- single product -->
-            <article class="product">
-                <div class="img-container">
-                    <img src="./images/clothe_1.jpg" alt="product" class="product-img" />
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-shopping-cart"></i>add to bag
-                    </button>
-                </div>
-                <h3>queen bed</h3>
-                <h4>$167.00</h4>
-            </article>
             <!-- end of product -->
         </div>
 
@@ -241,16 +288,68 @@
                 </div> -->
                     <!-- end of cart item -->
 
-                    <div class="cart-footer">
-                        <h3>your total : kes <span class="cart-total">0</span></h3>
-                        <button class="clear-cart banner-btn">clear cart</button>
-                    </div>
                 </div>
+                <div class="cart-footer">
+                    <h3>your total : kes <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
+
             </div>
     </section>
 
+    <footer>
+        <div class='footer'>
+            <div class='footerContent'>
+                <img src="./images/logo.gif" alt="groceries icon">
+                <div class=link>
+                    <a href="#">Help</a><br>
+                    <a href="#">Return policy</a>
+                </div><br>
+                <div class=link2>
+                    <a href="#">About us</a><br>
+                    <a href="#">sell with us</a>
+                </div>
+                <p style="float:right;"><strong>Get the App on</strong></p>
+                <div style="clear:both;"></div>
+                <div class=link3>
+                    <img src="./images/playstore.png" alt="/images/playstore.png" alt="groceries icon"
+                        style="width:120px;height:60px;">
 
+                </div>
+                <div class=link4>
+                    <p style="text-align:right;"><img src="./images/applestore.png" alt="../images/applestore.png"
+                            alt="groceries icon" style="width:120px;height:60px;">
+                    </p>
+                </div>
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div class="social_icons">
+                    <h2>Follow us</h2>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                    <a href="#" class="fa fa-skype"></a>
+                    <a href="#" class="fa fa-android"></a>
+                    <div class=copyright>
+                        <p style="text-align:center;">&copyright 2020<br>visit us at www.sokokubwa.com .<br>Come one
+                            Come
+                            all!!!
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="./js/app.js"></script>
+
 </body>
 
 </html>
